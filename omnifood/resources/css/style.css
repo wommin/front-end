@@ -1,0 +1,146 @@
+/*-------------------------------*/
+/*BASIC SETUP*/
+/*-------------------------------*/
+
+/*기본 설정*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*기본 설정*/
+html {
+    background-color: #fff;
+    color: #505050;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+/*-------------------------------*/
+/*REUSABLE COMPONENTS*/
+/*-------------------------------*/
+
+
+/*뭐하는 애지..?*/
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/*----HEADINGS---*/
+h1 {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 240%;
+    font-weight: 300;
+    text-transform: uppercase;/*대문자로*/
+    letter-spacing: 1px;/*문자 사이 간격*/
+    word-spacing: 4px;/*단어 사이 간격*/
+}
+
+/*----BUTTONS----*/
+
+/*.btn이 link이고 visited일때*/
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+    /*0.2초에 걸쳐서 바뀜*/
+}
+
+.btn-full:link,
+.btn-full:visited {
+    margin-right: 15px;
+    background-color: #e67e22;
+    border: 1px solid #e67e22;
+    color: #fff;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #e67e22;
+    color: #e67e22;
+}
+
+/*마우스 위에 커서 올리거나 눌렀을 때*/
+.btn:hover,
+.btn:active {
+    background-color: #cf6d17;
+}
+
+.btn-full:hover,
+.btn-full:active {
+    border: 1px solid ##cf6d17;
+    color: #eee;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid #e67e22;
+    color: #fff;
+}
+
+/*-------------------------------*/
+/*HEADER*/
+/*-------------------------------*/
+
+/*이미지 70% 어둡*/
+header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url(img/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh
+}
+/*가운데 정렬*/
+.hero-text-box{
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*가운데 정렬*/
+}
+
+.logo {
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+}
+
+/*main-nav에 있는 li*/
+.main-nav li {
+    display:inline-block;
+    margin-left: 40px;
+
+}
+
+.main-nav li a:link, 
+.main-nav li a:visited{
+    padding: 8px 0px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover, 
+.main-nav li a:active{
+    border-bottom: 2px solid #e67e22;
+}
